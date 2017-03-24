@@ -89,5 +89,7 @@
      "tramp": ["tramp", "arapi"],
      "konj": ["konj", "arapi"],
      "konkurencija": ["konkurencija", "lazu", "rokfeler"],
+     "crveno": ["crveno"],
+     "zezanje": ["zezanje", "provod"]
      
 }
