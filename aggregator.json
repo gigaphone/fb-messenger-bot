@@ -23,7 +23,7 @@
      "sumadija":	["sumadija"],
      "zena":	["zena", "sisarkice"],
      "predskazan":	["predskazan", "putovanje"],
-     "prevaren":	["prevaren", "lazu"],
+     "prevaren":	["prevaren", "lazu", "notar"],
      "rik":	["rik"],
      "zemun":	["zemun"],
      "sirotinja":	["sirotinja", "savetnik", "sirotinjaplaca"],
@@ -74,13 +74,19 @@
      "savetnik": ["savetnik"],
      "penzije": ["vucicpenzije"],
      "rokfeler": ["rokfeler"],
-     "mladenovac": ["mladenovac", "saj"],
+     "mladenovac": ["mladenovac", "saj", "prilepak"],
      "burek": ["burek"],
      "putovanje": ["putovanje"],
      "provod": ["provod"],
      "ajkula": ["ajkula", "tajkun"],
      "fondacija": ["fondacija"],
-     "igra": ["igra"],
+     "igra": ["igra", "ozbiljno"],
      "kvota": ["kvota"],
-     "lakunoc": ["lakunoc", "cika"]
+     "lakunoc": ["lakunoc", "cika"],
+     "program": ["program", "vucicpenzije"]
+     "prilepak" ["prilepak"],
+     "ozbiljan": ["ozbiljan", "kvota"],
+     "tramp": ["tramp", "arapi"],
+     "konj": ["konj", "arapi"]
+     
 }
