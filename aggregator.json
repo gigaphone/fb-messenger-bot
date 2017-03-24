@@ -80,13 +80,14 @@
      "provod": ["provod"],
      "ajkula": ["ajkula", "tajkun"],
      "fondacija": ["fondacija"],
-     "igra": ["igra", "ozbiljno"],
+     "igra": ["igra", "ozbiljno", "zezanje"],
      "kvota": ["kvota"],
      "lakunoc": ["lakunoc", "cika"],
      "program": ["program", "vucicpenzije"],
      "prilepak": ["prilepak"],
-     "ozbiljan": ["ozbiljan", "kvota"],
+     "ozbiljan": ["ozbiljan", "kvota", "zezanje"],
      "tramp": ["tramp", "arapi"],
-     "konj": ["konj", "arapi"]
+     "konj": ["konj", "arapi"],
+     "konkurencija": ["konkurencija", "lazu", "rokfeler"],
      
 }
