@@ -35,7 +35,7 @@ def answer(message):
         if sum(ord(c) < 128 for c in message)/float(len(message)) < 0.30:
             return u"Aj ljubi čika na srpskom i latinici"
 
-        for word in message.split():
+        for word in sorted(message.split(), key=len, reverse=True):
             count += 1
             if len(word) < 3:
                 continue
@@ -99,7 +99,7 @@ def webhook():
                         #recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
                         message_text = "jako" if "text" not in messaging_event["message"] else messaging_event["message"]["text"] # the message's text
 
-                        bot_reply = answer(message_text.encode('utf-8'))
+                        bot_reply = answer(message_text.decode('utf-8'))
 
                         log_wrapper(bot_reply.encode('utf-8'))
 

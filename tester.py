@@ -9,6 +9,6 @@ i = 0
 for key in answers.keys():
     i += 1
     print "(" + str(i) + ") " + key
-    for i in range(1,20):
+    for j in range(1,20):
         answer(key)
         #print key + ":" + answer(key)
