@@ -37,7 +37,6 @@ def answer(message):
             return u"Aj ljubi čika na srpskom i latinici"
 
         for word in sorted(message.split(), key=len, reverse=True):
-            word = word.decode('utf8')
             count += 1
             if len(word) < 3:
                 continue
