@@ -36,6 +36,7 @@ def answer(message):
             return u"Aj ljubi čika na srpskom i latinici"
 
         for word in sorted(message.split(), key=len, reverse=True):
+            word = word.decode('utf8')
             count += 1
             if len(word) < 3:
                 continue
@@ -43,6 +44,7 @@ def answer(message):
                 word = 'ljubi'
 
             for key in question.keys():
+                key = key.decode('utf8')
                 current_distance = distance.levenshtein(key, word)*distance.jaccard(key,word)
                 current_distance += current_distance / float(len(word))
                 #print current_distance
@@ -99,7 +101,7 @@ def webhook():
                         #recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
                         message_text = "jako" if "text" not in messaging_event["message"] else messaging_event["message"]["text"] # the message's text
 
-                        bot_reply = answer(message_text.decode('utf-8'))
+                        bot_reply = answer(message_text)
 
                         log_wrapper(bot_reply.encode('utf-8'))
 
