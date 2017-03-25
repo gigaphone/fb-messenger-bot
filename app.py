@@ -44,7 +44,6 @@ def answer(message):
                 word = 'ljubi'
 
             for key in question.keys():
-                key = key.decode('utf8')
                 current_distance = distance.levenshtein(key, word)*distance.jaccard(key,word)
                 current_distance += current_distance / float(len(word))
                 #print current_distance
